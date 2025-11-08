@@ -1,6 +1,7 @@
 // Diego Núñez García A01644371
 
 #include <bits/stdc++.h>
+
 using namespace std;
 
 struct Neighborhood {
