@@ -1,0 +1,9 @@
+/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CGAL_Qt5_moc_and_resources.dir
+/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/cgal.dir
+/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/ALL_CGAL_TARGETS.dir
+/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/cgal_check_build_system.dir
+/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/voronoi.dir
+/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/edit_cache.dir
+/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/rebuild_cache.dir
+/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir
+/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir
