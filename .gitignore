@@ -1,6 +1,4 @@
 *.exe
 *.out
-CMakeLists.txt
 
-/build/
 /.vscode/
