@@ -1,5 +1,8 @@
-# Created by the script cgal_create_cmake_script
-# This is the CMake script for compiling a CGAL application.
+# Pasos para compilar
+# Generar CMakeLists.txt
+# Crear carpeta build y acceder a ella
+# Ejecutar 'cmake ..'
+# Ejecutar 'make'
 
 cmake_minimum_required(VERSION 3.1...3.23)
 project( Quinto )
