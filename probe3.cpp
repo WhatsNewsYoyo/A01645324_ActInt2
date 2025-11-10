@@ -8,53 +8,68 @@
 #include <iomanip>
 #include <queue>
 #include <fstream>
-
 using namespace std;
 
-const double INF = numeric_limits<double>::max();
-const double EPS = 1e-9;
+// Auxiliary constants
+const double INF = numeric_limits<double>::max();   // Infinite is defined as the maximum value a double can store
+const double EPS = 1e-9;                            //
 
 struct Point {
     double x, y;
 };
 
-// Helper to convert index to neighborhood name (0 -> A, 1 -> B, etc.)
+// Helper to convert index to neighborhood name (0 -> A, 1 -> B, etc)
 char indexToChar(int i) {
     return 'A' + i;
 }
 
 // ==========================================
-// 1. Prim's Algorithm for MST (Optimal Wiring)
+// Prim's Algorithm for MST (Optimal Wiring)
 // ==========================================
+/*
+    This function finds a set of connections of edges that join all the vertices, which represent the cities, with the
+    lowest possible cost. N represent the number of cities, and distMatrix the distances between city i and city j.
+    
+    Complexity: Because of the nested for loops, the complexity of this algorithm is O(N^2), where N represents the number
+    of nodes in the graph.
+*/
 void solveMST(int N, const vector<vector<double>>& distMatrix) {
     cout << "1. Optimal wiring (MST):" << endl;
-    vector<double> key(N, INF);
-    vector<int> parent(N, -1);
-    vector<bool> inMST(N, false);
+    vector<double> key(N, INF);         // Will store the shortest known distance to connect node i
+    vector<int> parent(N, -1);          // Stores the predecessor of a node i so we can reconstruct the path
+    vector<bool> inMST(N, false);       // Helps us identify already included nodes
 
-    key[0] = 0;
+    key[0] = 0;     // We start from the node 0
 
-    double totalWeight = 0;
+    double totalWeight = 0;     // Sum of the weight of all edges in the MST
+
+    // We iterate over all the nodes in the graph
     for (int count = 0; count < N; count++) {
         double minKey = INF;
         int u = -1;
 
+        // Search for a node that hasn't been included yet with the lowest connection cost. We will add it to the MST
         for (int v = 0; v < N; v++) {
+            // We try to find a node that has not been included in the MST
             if (!inMST[v] && key[v] < minKey) {
                 minKey = key[v];
                 u = v;
             }
         }
 
-        if (u == -1) break; 
+        if (u == -1) break; // There are no more possible connections
 
-        inMST[u] = true;
+        inMST[u] = true;    // The node is marked as included
+
+        // If the node has a parent, we print the edge that join both nodes and add the distance to the total
         if (parent[u] != -1) {
-            cout << "(" << indexToChar(parent[u]) << ", " << indexToChar(u) << ")" << endl;
+            cout << "(" << indexToChar(parent[u]) << ", " << indexToChar(u) << ")" << endl;     // Convert numbers to letters
             totalWeight += distMatrix[parent[u]][u];
         }
 
+        // For each neighbor of u
         for (int v = 0; v < N; v++) {
+            // We try to see if connecting each node v through u is cheaper, so we change the connection
             if (distMatrix[u][v] > 0 && !inMST[v] && distMatrix[u][v] < key[v]) {
                 parent[v] = u;
                 key[v] = distMatrix[u][v];
@@ -66,8 +81,11 @@ void solveMST(int N, const vector<vector<double>>& distMatrix) {
 }
 
 // ==========================================
-// 2. TSP Nearest Neighbor (Mail Route)
+// TSP Nearest Neighbor (Mail Route)
 // ==========================================
+/*
+    Complexity:
+*/
 void solveTSP(int N, const vector<vector<double>>& distMatrix) {
     cout << "2. Shortest route (TSP - Nearest Neighbor):" << endl;
 
@@ -113,8 +131,14 @@ void solveTSP(int N, const vector<vector<double>>& distMatrix) {
 }
 
 // ==========================================
-// 3. Edmonds-Karp for Max Flow
+// Edmonds-Karp for Max Flow
 // ==========================================
+/*
+    Complexity of the whole algorithm:
+*/
+
+// Auxiliary function to find augmenting paths. The Edmonds-Karp implementation uses breadth-first search
+// Complexity: O(V + E)
 bool bfs(int N, const vector<vector<double>>& rGraph, int s, int t, vector<int>& parent) {
     fill(parent.begin(), parent.end(), -1);
     vector<bool> visited(N, false);
@@ -143,6 +167,8 @@ bool bfs(int N, const vector<vector<double>>& rGraph, int s, int t, vector<int>&
     return false;
 }
 
+// Edmonds-Karp
+// Complexity: O(V*E^2)
 void solveMaxFlow(int N, vector<vector<double>> capacity) {
     cout << "3. Maximum information flow (A to " << indexToChar(N-1) << "):" << endl;
     int s = 0;
@@ -171,8 +197,11 @@ void solveMaxFlow(int N, vector<vector<double>> capacity) {
 }
 
 // ==========================================
-// 4. Voronoi Regions (Half-plane intersection)
+// Voronoi Regions (Half-plane intersection)
 // ==========================================
+/*
+    Complexity:
+*/
 
 // Geometry helpers
 struct Line {
@@ -266,10 +295,10 @@ void solveVoronoi(int N, vector<Point> sites) {
     cout << "--------------------------------------------------------" << endl;
 }
 
-// ==========================================
-// Main Driver
-// ==========================================
+
+
 int main() {
+    // Input reading
     ifstream inFile("input.txt");
 
     if (!inFile) {
@@ -277,12 +306,14 @@ int main() {
         return 1;
     }
 
+    // Parsing the first line of the file (number of cities)
     int N;
     if (!(inFile >> N)) {
         cerr << "Error: Could not read N from input file." << endl;
         return 1;
     }
 
+    // Matrix that stores the distance between the different N cities
     vector<vector<double>> distMatrix(N, vector<double>(N));
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
