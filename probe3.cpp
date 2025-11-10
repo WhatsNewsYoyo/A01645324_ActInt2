@@ -84,42 +84,49 @@ void PrimMST(int N, const vector<vector<double>>& distMatrix) {
 // TSP Nearest Neighbor (Mail Route)
 // ==========================================
 /*
+    This function tries to solve the TSP problem by always visiting the nearest node. N represents the number
+    of cities (nodes) and distMatrix the distances between city i and city j.
+
     Complexity:
 */
-void solveTSP(int N, const vector<vector<double>>& distMatrix) {
-    cout << "2. Shortest route (TSP - Nearest Neighbor):" << endl;
+void nearestNeighbor(int N, const vector<vector<double>>& distMatrix) {
+    cout << "2. Shortest route (Nearest Neighbor):" << endl;
 
     if (N == 0) return;
 
-    vector<bool> visited(N, false);
-    vector<int> path;
-    int current = 0; // Start at 'A'
-    double totalDist = 0;
+    vector<bool> visited(N, false);     // Helps us identify already visited cities
+    vector<int> path;                   // Stores the order in which the nodes were visited
+    int current = 0;                    // The starting node, that represents 'A'
+    double totalDist = 0;               // Acumulated distance of the path
 
+    // Start the trip from A
     path.push_back(current);
     visited[current] = true;
 
-    // Find nearest unvisited neighbor N-1 times
+    // Find nearest unvisited neighbor iterating over all the nodes of the graph
     for (int i = 0; i < N - 1; ++i) {
         int nextNode = -1;
         double minDist = INF;
 
+        // For all the nodes, we look for their neighbors
         for (int j = 0; j < N; ++j) {
+            // Search between all the unvisited cities
             if (!visited[j] && distMatrix[current][j] < minDist) {
-                minDist = distMatrix[current][j];
-                nextNode = j;
+                minDist = distMatrix[current][j];       // The nearest one
+                nextNode = j;                           // Store the index
             }
         }
 
+        // Add the nearest city to the path
         if (nextNode != -1) {
             path.push_back(nextNode);
             visited[nextNode] = true;
-            totalDist += minDist;
-            current = nextNode;
+            totalDist += minDist;       // Update the distance traveled
+            current = nextNode;         // Move to that city
         }
     }
 
-    // Return to start
+    // Return to start once all cities had been visited
     totalDist += distMatrix[current][path[0]];
     path.push_back(path[0]);
 
@@ -349,7 +356,7 @@ int main() {
 
     cout << "--- RESULTS ---" << endl;
     PrimMST(N, distMatrix);
-    solveTSP(N, distMatrix);
+    nearestNeighbor(N, distMatrix);
     solveMaxFlow(N, flowMatrix);
     solveVoronoi(N, sites);
 
