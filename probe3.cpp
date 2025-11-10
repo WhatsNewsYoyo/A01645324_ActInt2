@@ -33,7 +33,7 @@ char indexToChar(int i) {
     Complexity: Because of the nested for loops, the complexity of this algorithm is O(N^2), where N represents the number
     of nodes in the graph.
 */
-void solveMST(int N, const vector<vector<double>>& distMatrix) {
+void PrimMST(int N, const vector<vector<double>>& distMatrix) {
     cout << "1. Optimal wiring (MST):" << endl;
     vector<double> key(N, INF);         // Will store the shortest known distance to connect node i
     vector<int> parent(N, -1);          // Stores the predecessor of a node i so we can reconstruct the path
@@ -348,7 +348,7 @@ int main() {
     inFile.close();
 
     cout << "--- RESULTS ---" << endl;
-    solveMST(N, distMatrix);
+    PrimMST(N, distMatrix);
     solveTSP(N, distMatrix);
     solveMaxFlow(N, flowMatrix);
     solveVoronoi(N, sites);
