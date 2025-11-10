@@ -4,566 +4,452 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
-      - "CMakeLists.txt:5 (project)"
+      - "C:/mingw64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:20 (project)"
     message: |
-      The system is: Linux - 6.6.87.2-microsoft-standard-WSL2 - x86_64
+      The system is: Windows - 6.2.9200 - AMD64
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:5 (project)"
+      - "C:/mingw64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/mingw64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/mingw64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:20 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /usr/bin/cc 
+      Compiler:  
       Build flags: 
       Id flags:  
       
       The output was:
       0
+      Versi├│n de MSBuild 17.12.6+db5f6012c para .NET Framework
+      Compilaci├│n iniciada a las 09/11/2025 07:17:50 p. m..
+      
+      Proyecto "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+        Creando directorio "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Se crear├í "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        "pwsh.exe" no se reconoce como un comando interno o externo,
+        programa o archivo por lotes ejecutable.
+        El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" sali├│ con el c├│digo 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminar├í el archivo "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Compilaci├│n del proyecto terminada "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.vcxproj" (destinos predeterminados).
+      
+      Compilaci├│n correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:02.14
       
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
       
-      The C compiler identification is GNU, found in:
-        /home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/3.26.4/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:5 (project)"
+      - "C:/mingw64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/mingw64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/mingw64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:20 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /usr/bin/c++ 
+      Compiler:  
       Build flags: 
       Id flags:  
       
       The output was:
       0
+      Versi├│n de MSBuild 17.12.6+db5f6012c para .NET Framework
+      Compilaci├│n iniciada a las 09/11/2025 07:17:52 p. m..
+      
+      Proyecto "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+        Creando directorio "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Se crear├í "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        "pwsh.exe" no se reconoce como un comando interno o externo,
+        programa o archivo por lotes ejecutable.
+        El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" sali├│ con el c├│digo 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminar├í el archivo "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Compilaci├│n del proyecto terminada "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados).
+      
+      Compilaci├│n correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:02.16
       
       
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
       
-      The CXX compiler identification is GNU, found in:
-        /home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/3.26.4/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "C:/mingw64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/mingw64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:20 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-RctwMl"
-      binary: "/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-RctwMl"
+      source: "C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-5mayxo"
+      binary: "C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-5mayxo"
     cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-RctwMl'
+        Change Dir: C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-5mayxo
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f3099/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_f3099.dir/build.make CMakeFiles/cmTC_f3099.dir/build
-        gmake[1]: Entering directory '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-RctwMl'
-        Building C object CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/cc
-        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-        OFFLOAD_TARGET_DEFAULT=1
-        Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f3099.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f3099.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cchqWGGw.s
-        GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
-        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_38517.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Versi├│n de MSBuild 17.12.6+db5f6012c para .NET Framework
+        Compilaci├│n iniciada a las 09/11/2025 07:17:55 p. m..
         
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /usr/lib/gcc/x86_64-linux-gnu/13/include
-         /usr/local/include
-         /usr/include/x86_64-linux-gnu
-         /usr/include
-        End of search list.
-        Compiler executable checksum: 38987c28e967c64056a6454abdef726e
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f3099.dir/'
-         as -v --64 -o CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o /tmp/cchqWGGw.s
-        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
-        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_f3099
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3099.dir/link.txt --verbose=1
-        /usr/bin/cc  -v CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o -o cmTC_f3099 
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/cc
-        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
-        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-        OFFLOAD_TARGET_DEFAULT=1
-        Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
-        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f3099' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f3099.'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQD4oYb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f3099 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f3099' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f3099.'
-        gmake[1]: Leaving directory '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-RctwMl'
+        Proyecto "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5mayxo\\cmTC_38517.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_38517.dir\\Debug\\".
+          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+          Creando directorio "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5mayxo\\Debug\\".
+          Creando directorio "cmTC_38517.dir\\Debug\\cmTC_38517.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_38517.dir\\Debug\\cmTC_38517.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_38517.dir\\Debug\\cmTC_38517.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_38517.dir\\Debug\\\\" /Fd"cmTC_38517.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\mingw64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.42.34433 para x64
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_38517.dir\\Debug\\\\" /Fd"cmTC_38517.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\mingw64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5mayxo\\Debug\\cmTC_38517.exe" /INCREMENTAL /ILK:"cmTC_38517.dir\\Debug\\cmTC_38517.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-5mayxo/Debug/cmTC_38517.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-5mayxo/Debug/cmTC_38517.lib" /MACHINE:X64  /machine:x64 cmTC_38517.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_38517.vcxproj -> C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5mayxo\\Debug\\cmTC_38517.exe
+        FinalizeBuildStatus:
+          Se eliminar├í el archivo "cmTC_38517.dir\\Debug\\cmTC_38517.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_38517.dir\\Debug\\cmTC_38517.tlog\\cmTC_38517.lastbuildstate".
+        Compilaci├│n del proyecto terminada "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5mayxo\\cmTC_38517.vcxproj" (destinos predeterminados).
+        
+        Compilaci├│n correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:01.04
         
       exitCode: 0
   -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Parsed C implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
-          add: [/usr/local/include]
-          add: [/usr/include/x86_64-linux-gnu]
-          add: [/usr/include]
-        end of search list found
-        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
-        collapse include dir [/usr/local/include] ==> [/usr/local/include]
-        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
-        collapse include dir [/usr/include] ==> [/usr/include]
-        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-RctwMl']
-        ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f3099/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_f3099.dir/build.make CMakeFiles/cmTC_f3099.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-RctwMl']
-        ignore line: [Building C object CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/cc]
-        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f3099.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f3099.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cchqWGGw.s]
-        ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
-        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
-        ignore line: [ /usr/local/include]
-        ignore line: [ /usr/include/x86_64-linux-gnu]
-        ignore line: [ /usr/include]
-        ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: 38987c28e967c64056a6454abdef726e]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f3099.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o /tmp/cchqWGGw.s]
-        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
-        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_f3099]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3099.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o -o cmTC_f3099 ]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/cc]
-        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
-        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
-        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f3099' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f3099.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQD4oYb.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f3099 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
-          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
-          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccQD4oYb.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [-plugin-opt=-pass-through=-lc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [--build-id] ==> ignore
-          arg [--eh-frame-hdr] ==> ignore
-          arg [-m] ==> ignore
-          arg [elf_x86_64] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [--as-needed] ==> ignore
-          arg [-dynamic-linker] ==> ignore
-          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-          arg [-pie] ==> ignore
-          arg [-znow] ==> ignore
-          arg [-zrelro] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_f3099] ==> ignore
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
-          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-          arg [-L/lib/../lib] ==> dir [/lib/../lib]
-          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
-          arg [CMakeFiles/cmTC_f3099.dir/CMakeCCompilerABI.c.o] ==> ignore
-          arg [-lgcc] ==> lib [gcc]
-          arg [--push-state] ==> ignore
-          arg [--as-needed] ==> ignore
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [--pop-state] ==> ignore
-          arg [-lc] ==> lib [c]
-          arg [-lgcc] ==> lib [gcc]
-          arg [--push-state] ==> ignore
-          arg [--as-needed] ==> ignore
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [--pop-state] ==> ignore
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
-        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-        collapse library dir [/lib/../lib] ==> [/lib]
-        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
-        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
-        implicit fwks: []
-      
-      
-  -
     kind: "try_compile-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "C:/mingw64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/mingw64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:20 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-13tXGE"
-      binary: "/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-13tXGE"
+      source: "C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-vxbfmf"
+      binary: "C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-vxbfmf"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-13tXGE'
+        Change Dir: C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-vxbfmf
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c98da/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_c98da.dir/build.make CMakeFiles/cmTC_c98da.dir/build
-        gmake[1]: Entering directory '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-13tXGE'
-        Building CXX object CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/c++
-        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-        OFFLOAD_TARGET_DEFAULT=1
-        Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c98da.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c98da.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccYA6gat.s
-        GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
-        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4396a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Versi├│n de MSBuild 17.12.6+db5f6012c para .NET Framework
+        Compilaci├│n iniciada a las 09/11/2025 07:17:57 p. m..
         
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
-        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /usr/include/c++/13
-         /usr/include/x86_64-linux-gnu/c++/13
-         /usr/include/c++/13/backward
-         /usr/lib/gcc/x86_64-linux-gnu/13/include
-         /usr/local/include
-         /usr/include/x86_64-linux-gnu
-         /usr/include
-        End of search list.
-        Compiler executable checksum: c81c05345ce537099dafd5580045814a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c98da.dir/'
-         as -v --64 -o CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccYA6gat.s
-        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
-        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_c98da
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c98da.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c98da 
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/c++
-        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
-        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-        OFFLOAD_TARGET_DEFAULT=1
-        Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
-        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c98da' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c98da.'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGTdH9L.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c98da /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c98da' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c98da.'
-        gmake[1]: Leaving directory '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-13tXGE'
+        Proyecto "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxbfmf\\cmTC_4396a.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_4396a.dir\\Debug\\".
+          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+          Creando directorio "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxbfmf\\Debug\\".
+          Creando directorio "cmTC_4396a.dir\\Debug\\cmTC_4396a.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_4396a.dir\\Debug\\cmTC_4396a.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_4396a.dir\\Debug\\cmTC_4396a.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4396a.dir\\Debug\\\\" /Fd"cmTC_4396a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\mingw64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.42.34433 para x64
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4396a.dir\\Debug\\\\" /Fd"cmTC_4396a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\mingw64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxbfmf\\Debug\\cmTC_4396a.exe" /INCREMENTAL /ILK:"cmTC_4396a.dir\\Debug\\cmTC_4396a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-vxbfmf/Debug/cmTC_4396a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-vxbfmf/Debug/cmTC_4396a.lib" /MACHINE:X64  /machine:x64 cmTC_4396a.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_4396a.vcxproj -> C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxbfmf\\Debug\\cmTC_4396a.exe
+        FinalizeBuildStatus:
+          Se eliminar├í el archivo "cmTC_4396a.dir\\Debug\\cmTC_4396a.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_4396a.dir\\Debug\\cmTC_4396a.tlog\\cmTC_4396a.lastbuildstate".
+        Compilaci├│n del proyecto terminada "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vxbfmf\\cmTC_4396a.vcxproj" (destinos predeterminados).
+        
+        Compilaci├│n correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:01.03
         
       exitCode: 0
   -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Parsed CXX implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [/usr/include/c++/13]
-          add: [/usr/include/x86_64-linux-gnu/c++/13]
-          add: [/usr/include/c++/13/backward]
-          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
-          add: [/usr/local/include]
-          add: [/usr/include/x86_64-linux-gnu]
-          add: [/usr/include]
-        end of search list found
-        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
-        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
-        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
-        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
-        collapse include dir [/usr/local/include] ==> [/usr/local/include]
-        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
-        collapse include dir [/usr/include] ==> [/usr/include]
-        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
-    message: |
-      Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-13tXGE']
-        ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c98da/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_c98da.dir/build.make CMakeFiles/cmTC_c98da.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-13tXGE']
-        ignore line: [Building CXX object CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/c++]
-        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c98da.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c98da.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccYA6gat.s]
-        ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
-        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
-        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ /usr/include/c++/13]
-        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
-        ignore line: [ /usr/include/c++/13/backward]
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
-        ignore line: [ /usr/local/include]
-        ignore line: [ /usr/include/x86_64-linux-gnu]
-        ignore line: [ /usr/include]
-        ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: c81c05345ce537099dafd5580045814a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c98da.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccYA6gat.s]
-        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
-        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_c98da]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c98da.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c98da ]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/c++]
-        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
-        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
-        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c98da' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c98da.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGTdH9L.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c98da /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
-          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
-          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccGTdH9L.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [--build-id] ==> ignore
-          arg [--eh-frame-hdr] ==> ignore
-          arg [-m] ==> ignore
-          arg [elf_x86_64] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [--as-needed] ==> ignore
-          arg [-dynamic-linker] ==> ignore
-          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-          arg [-pie] ==> ignore
-          arg [-znow] ==> ignore
-          arg [-zrelro] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_c98da] ==> ignore
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
-          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-          arg [-L/lib/../lib] ==> dir [/lib/../lib]
-          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
-          arg [CMakeFiles/cmTC_c98da.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-          arg [-lstdc++] ==> lib [stdc++]
-          arg [-lm] ==> lib [m]
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lc] ==> lib [c]
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [-lgcc] ==> lib [gcc]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
-        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-        collapse library dir [/lib/../lib] ==> [/lib]
-        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
-        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
-        implicit fwks: []
-      
-      
-  -
     kind: "try_compile-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
-      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
-      - "/usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_SetupCGALDependencies.cmake:111 (find_package)"
-      - "/usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_setup_target_dependencies.cmake:3 (CGAL_setup_CGAL_dependencies)"
-      - "/usr/lib/x86_64-linux-gnu/cmake/CGAL/CGALConfig.cmake:185 (CGAL_setup_target_dependencies)"
-      - "CMakeLists.txt:7 (find_package)"
+      - "C:/mingw64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/mingw64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "C:/mingw64/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/mingw64/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:904 (_find_package)"
+      - "C:/vcpkg/installed/x64-windows/share/cgal/CGAL_SetupCGALDependencies.cmake:108 (find_package)"
+      - "C:/vcpkg/installed/x64-windows/share/cgal/CGAL_setup_target_dependencies.cmake:3 (CGAL_setup_CGAL_dependencies)"
+      - "C:/vcpkg/installed/x64-windows/share/cgal/CGALConfig.cmake:192 (CGAL_setup_target_dependencies)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:904 (_find_package)"
+      - "CMakeLists.txt:23 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-23vgYv"
-      binary: "/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-23vgYv"
+      source: "C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-wm35g1"
+      binary: "C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-wm35g1"
     cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/CGAL;/usr/lib/x86_64-linux-gnu/cmake/CGAL;/usr/lib/x86_64-linux-gnu/cmake/CGAL"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/vcpkg/installed/x64-windows/share/cgal;C:/vcpkg/installed/x64-windows/share/cgal;C:/vcpkg/installed/x64-windows/share/cgal"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-23vgYv'
+        Change Dir: C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-wm35g1
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77814/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_77814.dir/build.make CMakeFiles/cmTC_77814.dir/build
-        gmake[1]: Entering directory '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-23vgYv'
-        Building C object CMakeFiles/cmTC_77814.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_77814.dir/src.c.o -c "/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-23vgYv/src.c"
-        Linking C executable cmTC_77814
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77814.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_77814.dir/src.c.o -o cmTC_77814 
-        gmake[1]: Leaving directory '/home/victor/Escuela/Quinto semestre/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-23vgYv'
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_deec5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Versi├│n de MSBuild 17.12.6+db5f6012c para .NET Framework
+        Compilaci├│n iniciada a las 09/11/2025 07:17:59 p. m..
         
-      exitCode: 0
+        Proyecto "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wm35g1\\cmTC_deec5.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_deec5.dir\\Debug\\".
+          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+          Creando directorio "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wm35g1\\Debug\\".
+          Creando directorio "cmTC_deec5.dir\\Debug\\cmTC_deec5.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_deec5.dir\\Debug\\cmTC_deec5.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_deec5.dir\\Debug\\cmTC_deec5.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_deec5.dir\\Debug\\\\" /Fd"cmTC_deec5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wm35g1\\src.c"
+          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.42.34433 para x64
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_deec5.dir\\Debug\\\\" /Fd"cmTC_deec5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wm35g1\\src.c"
+          src.c
+        C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wm35g1\\src.c(1,10): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wm35g1\\cmTC_deec5.vcxproj]
+        Compilaci├│n del proyecto terminada "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wm35g1\\cmTC_deec5.vcxproj" (destinos predeterminados) -- ERROR.
+        
+        ERROR al compilar.
+        
+        "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wm35g1\\cmTC_deec5.vcxproj" (destino predeterminado) (1) ->
+        (ClCompile destino) -> 
+          C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wm35g1\\src.c(1,10): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wm35g1\\cmTC_deec5.vcxproj]
+        
+            0 Advertencia(s)
+            1 Errores
+        
+        Tiempo transcurrido 00:00:00.72
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/mingw64/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "C:/mingw64/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/mingw64/share/cmake-3.26/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:904 (_find_package)"
+      - "C:/vcpkg/installed/x64-windows/share/cgal/CGAL_SetupCGALDependencies.cmake:108 (find_package)"
+      - "C:/vcpkg/installed/x64-windows/share/cgal/CGAL_setup_target_dependencies.cmake:3 (CGAL_setup_CGAL_dependencies)"
+      - "C:/vcpkg/installed/x64-windows/share/cgal/CGALConfig.cmake:192 (CGAL_setup_target_dependencies)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:904 (_find_package)"
+      - "CMakeLists.txt:23 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-djlmgb"
+      binary: "C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-djlmgb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/vcpkg/installed/x64-windows/share/cgal;C:/vcpkg/installed/x64-windows/share/cgal;C:/vcpkg/installed/x64-windows/share/cgal"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-djlmgb
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_132d0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Versi├│n de MSBuild 17.12.6+db5f6012c para .NET Framework
+        Compilaci├│n iniciada a las 09/11/2025 07:18:00 p. m..
+        
+        Proyecto "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-djlmgb\\cmTC_132d0.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_132d0.dir\\Debug\\".
+          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+          Creando directorio "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-djlmgb\\Debug\\".
+          Creando directorio "cmTC_132d0.dir\\Debug\\cmTC_132d0.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_132d0.dir\\Debug\\cmTC_132d0.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_132d0.dir\\Debug\\cmTC_132d0.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_132d0.dir\\Debug\\\\" /Fd"cmTC_132d0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-djlmgb\\CheckFunctionExists.c"
+          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.42.34433 para x64
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_132d0.dir\\Debug\\\\" /Fd"cmTC_132d0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-djlmgb\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-djlmgb\\Debug\\cmTC_132d0.exe" /INCREMENTAL /ILK:"cmTC_132d0.dir\\Debug\\cmTC_132d0.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-djlmgb/Debug/cmTC_132d0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-djlmgb/Debug/cmTC_132d0.lib" /MACHINE:X64  /machine:x64 cmTC_132d0.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-djlmgb\\cmTC_132d0.vcxproj]
+        Compilaci├│n del proyecto terminada "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-djlmgb\\cmTC_132d0.vcxproj" (destinos predeterminados) -- ERROR.
+        
+        ERROR al compilar.
+        
+        "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-djlmgb\\cmTC_132d0.vcxproj" (destino predeterminado) (1) ->
+        (Link destino) -> 
+          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-djlmgb\\cmTC_132d0.vcxproj]
+        
+            0 Advertencia(s)
+            1 Errores
+        
+        Tiempo transcurrido 00:00:00.94
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/mingw64/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "C:/mingw64/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/mingw64/share/cmake-3.26/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:904 (_find_package)"
+      - "C:/vcpkg/installed/x64-windows/share/cgal/CGAL_SetupCGALDependencies.cmake:108 (find_package)"
+      - "C:/vcpkg/installed/x64-windows/share/cgal/CGAL_setup_target_dependencies.cmake:3 (CGAL_setup_CGAL_dependencies)"
+      - "C:/vcpkg/installed/x64-windows/share/cgal/CGALConfig.cmake:192 (CGAL_setup_target_dependencies)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:904 (_find_package)"
+      - "CMakeLists.txt:23 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-7mso4n"
+      binary: "C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-7mso4n"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/vcpkg/installed/x64-windows/share/cgal;C:/vcpkg/installed/x64-windows/share/cgal;C:/vcpkg/installed/x64-windows/share/cgal"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-7mso4n
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3bcb1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Versi├│n de MSBuild 17.12.6+db5f6012c para .NET Framework
+        Compilaci├│n iniciada a las 09/11/2025 07:18:01 p. m..
+        
+        Proyecto "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mso4n\\cmTC_3bcb1.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_3bcb1.dir\\Debug\\".
+          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+          Creando directorio "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mso4n\\Debug\\".
+          Creando directorio "cmTC_3bcb1.dir\\Debug\\cmTC_3bcb1.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_3bcb1.dir\\Debug\\cmTC_3bcb1.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_3bcb1.dir\\Debug\\cmTC_3bcb1.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3bcb1.dir\\Debug\\\\" /Fd"cmTC_3bcb1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mso4n\\CheckFunctionExists.c"
+          Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.42.34433 para x64
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3bcb1.dir\\Debug\\\\" /Fd"cmTC_3bcb1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mso4n\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mso4n\\Debug\\cmTC_3bcb1.exe" /INCREMENTAL /ILK:"cmTC_3bcb1.dir\\Debug\\cmTC_3bcb1.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-7mso4n/Debug/cmTC_3bcb1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Yael/Documents/Escuela/Quinto/Algorithms/A01645324_ActInt2/build/CMakeFiles/CMakeScratch/TryCompile-7mso4n/Debug/cmTC_3bcb1.lib" /MACHINE:X64  /machine:x64 cmTC_3bcb1.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mso4n\\cmTC_3bcb1.vcxproj]
+        Compilaci├│n del proyecto terminada "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mso4n\\cmTC_3bcb1.vcxproj" (destinos predeterminados) -- ERROR.
+        
+        ERROR al compilar.
+        
+        "C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mso4n\\cmTC_3bcb1.vcxproj" (destino predeterminado) (1) ->
+        (Link destino) -> 
+          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [C:\\Users\\Yael\\Documents\\Escuela\\Quinto\\Algorithms\\A01645324_ActInt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mso4n\\cmTC_3bcb1.vcxproj]
+        
+            0 Advertencia(s)
+            1 Errores
+        
+        Tiempo transcurrido 00:00:00.73
+        
+      exitCode: 1
 ...
