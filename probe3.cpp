@@ -12,7 +12,7 @@ using namespace std;
 
 // Auxiliary constants
 const double INF = numeric_limits<double>::max();   // Infinite is defined as the maximum value a double can store
-const double EPS = 1e-9;                            //
+const double EPS = 1e-9;                            // Epsilon constant to stabilize the comparison of two small numbers
 
 struct Point {
     double x, y;
@@ -33,7 +33,7 @@ char indexToChar(int i) {
     Complexity: Because of the nested for loops, the complexity of this algorithm is O(N^2), where N represents the number
     of nodes in the graph.
 */
-void PrimMST(int N, const vector<vector<double>>& distMatrix) {
+void primMST(int N, const vector<vector<double>>& distMatrix) {
     cout << "1. Optimal wiring (MST):" << endl;
     vector<double> key(N, INF);         // Will store the shortest known distance to connect node i
     vector<int> parent(N, -1);          // Stores the predecessor of a node i so we can reconstruct the path
@@ -141,7 +141,11 @@ void nearestNeighbor(int N, const vector<vector<double>>& distMatrix) {
 // Edmonds-Karp for Max Flow
 // ==========================================
 /*
-    Complexity of the whole algorithm:
+    This function finds the maximum flow of a network, represented by a graph.
+
+    Complexity of the whole algorithm: O(V*E^2), because each one of the E edges can cause
+    an iteration of the BFS, which costs approximately O(E) (in the worst case, there are more edges
+    than vertices), O(V) times.
 */
 
 // Auxiliary function to find augmenting paths. The Edmonds-Karp implementation uses breadth-first search
@@ -175,28 +179,31 @@ bool bfs(int N, const vector<vector<double>>& rGraph, int s, int t, vector<int>&
 }
 
 // Edmonds-Karp
-// Complexity: O(V*E^2)
-void solveMaxFlow(int N, vector<vector<double>> capacity) {
+void edmondsKarp(int N, vector<vector<double>> capacity) {
     cout << "3. Maximum information flow (A to " << indexToChar(N-1) << "):" << endl;
-    int s = 0;
-    int t = N - 1;
-    vector<vector<double>> rGraph = capacity; // Residual graph
-    vector<int> parent(N);
-    double max_flow = 0;
+    int s = 0;          // Source node
+    int t = N - 1;      // Sink node
+    vector<vector<double>> rGraph = capacity;       // Will be used as the residual graph
+    vector<int> parent(N);      // Node's predecessors
+    double max_flow = 0;        // Accumulator for the max flow
 
+    // While there exists an augmenting path
     while (bfs(N, rGraph, s, t, parent)) {
         double path_flow = INF;
+
+        // We take the edge with the minimum capacity
         for (int v = t; v != s; v = parent[v]) {
             int u = parent[v];
             path_flow = min(path_flow, rGraph[u][v]);
         }
 
+        // Update the residual graph
         for (int v = t; v != s; v = parent[v]) {
             int u = parent[v];
-            rGraph[u][v] -= path_flow;
-            rGraph[v][u] += path_flow;
+            rGraph[u][v] -= path_flow;      // Capacity
+            rGraph[v][u] += path_flow;      // Remaining capacity
         }
-        max_flow += path_flow;
+        max_flow += path_flow;      // Update the maximum flow
     }
 
     cout << "Max Flow Value: " << max_flow << endl;
@@ -207,45 +214,54 @@ void solveMaxFlow(int N, vector<vector<double>> capacity) {
 // Voronoi Regions (Half-plane intersection)
 // ==========================================
 /*
-    Complexity:
+    These following functions are an approximation to the Voronoi diagram by a polygon cut approach.
+    Complexity: The auxiliary functions have constant O(1) time. The Voronoi function has quadratic
+    complexity because of the nested for loops + the cost of cutting the polygon, which is linear
+    but has to be done N times, transforming it in quadratic. Considering we have N sites, the total
+    complexity of this procedure is O(n^3).
 */
 
 // Geometry helpers
 struct Line {
-    double a, b, c; // ax + by + c = 0
+    double a, b, c;     // Represent ax + by + c = 0
 };
 
 Line getBisector(Point p1, Point p2) {
-    // Midpoint
+    // Midpoint between points
     double mx = (p1.x + p2.x) / 2.0;
     double my = (p1.y + p2.y) / 2.0;
-    // Vector p1->p2 is normal to bisector: (p2.x - p1.x, p2.y - p1.y)
+
+    // Vector p1->p2 is normal to bisector (p2.x - p1.x, p2.y - p1.y)
     double a = p2.x - p1.x;
     double b = p2.y - p1.y;
-    // c = -ax - by. Plug in midpoint.
-    double c = -a * mx - b * my;
-    return {a, b, c};
+
+    double c = -a * mx - b * my;    // Adjusts c value
+
+    return {a, b, c};       // Return the constants for the line equation
 }
 
-// Check which side of line a point is on. >0 means "inside" standard halfplane if oriented correctly.
-// For Voronoi, we want the side containing the site.
+// Checks which side of line (bisector) a point is on
 double distToLine(Line l, Point p) {
     return l.a * p.x + l.b * p.y + l.c;
 }
 
+// Calculates the intersection point between two lines
 Point intersection(Line l1, Line l2) {
     double det = l1.a * l2.b - l2.a * l1.b;
-    if (abs(det) < EPS) return {NAN, NAN}; // Parallel
+
+    if (abs(det) < EPS)
+        return {NAN, NAN};
+
     return { (l1.b * l2.c - l2.b * l1.c) / det, (l2.a * l1.c - l1.a * l2.c) / det };
 }
 
-// Clip polygon by line. Keep the side where 'site' is.
+// Clip polygon by line, keep the side where a point is
 vector<Point> clipPoly(const vector<Point>& poly, Line l, Point site) {
     vector<Point> newPoly;
-    // Determine which side of the line the site is on.
-    // We want to keep points on the SAME side as the site.
+    // Determine which side of the line the site is on. We want to keep points on the same side as the point
     double siteSide = distToLine(l, site);
 
+    // Traverse the sides of the polygon looking on each segment
     for (size_t i = 0; i < poly.size(); ++i) {
         Point cur = poly[i];
         Point prev = poly[(i - 1 + poly.size()) % poly.size()];
@@ -253,8 +269,7 @@ vector<Point> clipPoly(const vector<Point>& poly, Line l, Point site) {
         double curSide = distToLine(l, cur);
         double prevSide = distToLine(l, prev);
 
-        // If current point is on the correct side (same sign as siteSide, or 0)
-        // We use EPS to handle float inaccuracies.
+        // If current point is on the correct side (same sign as siteSide, or 0). We use EPS to handle float inaccuracies.
         bool curIn = (siteSide >= -EPS && curSide >= -EPS) || (siteSide <= EPS && curSide <= EPS);
         bool prevIn = (siteSide >= -EPS && prevSide >= -EPS) || (siteSide <= EPS && prevSide <= EPS);
 
@@ -265,37 +280,46 @@ vector<Point> clipPoly(const vector<Point>& poly, Line l, Point site) {
                  newPoly.push_back(intersection(l, segLine));
             }
             newPoly.push_back(cur);
-        } else if (prevIn) {
+        }
+        else if (prevIn) {
             // Leaving true side, add intersection
              Line segLine = { -(cur.y - prev.y), cur.x - prev.x, -(-(cur.y - prev.y)*cur.x + (cur.x - prev.x)*cur.y) };
              newPoly.push_back(intersection(l, segLine));
         }
     }
-    return newPoly;
+    return newPoly;     // Returns the line that passes through the polygon to calculate the intersection with the cut line
 }
 
-void solveVoronoi(int N, vector<Point> sites) {
+// Apply all the previous functions
+void voronoi(int N, vector<Point> sites) {
     cout << "4. Voronoi Regions (nearest exchange areas):" << endl;
 
-    // Define a bounding box for the city.
-    // Based on example input (coords around 100-500), let's use a generous 0-1000 box.
+    // Define a big bounding box
     double MIN_C = 0, MAX_C = 1000;
     vector<Point> boundingBox = { {MIN_C, MIN_C}, {MAX_C, MIN_C}, {MAX_C, MAX_C}, {MIN_C, MAX_C} };
 
     cout << fixed << setprecision(1);
 
+    // For each point
     for (int i = 0; i < N; ++i) {
+        // We start with the bounding box
         vector<Point> region = boundingBox;
+
         for (int j = 0; j < N; ++j) {
             if (i == j) continue;
+
+            // We cut it and conserve the side to which is closer to i
             Line bisector = getBisector(sites[i], sites[j]);
-            region = clipPoly(region, bisector, sites[i]);
+            region = clipPoly(region, bisector, sites[i]);      // Voronoi region for i
         }
 
         cout << "Region for " << indexToChar(i) << " (" << sites[i].x << "," << sites[i].y << "): [";
+
         for (size_t k = 0; k < region.size(); ++k) {
             cout << "(" << region[k].x << "," << region[k].y << ")";
-            if (k < region.size() - 1) cout << ", ";
+
+            if (k < region.size() - 1)
+                cout << ", ";
         }
         cout << "]" << endl;
     }
@@ -328,6 +352,7 @@ int main() {
         }
     }
 
+    // Matrix that stores the flow of a network
     vector<vector<double>> flowMatrix(N, vector<double>(N));
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
@@ -337,7 +362,6 @@ int main() {
 
     vector<Point> sites(N);
     string line;
-    // consume newline after the last matrix element
     getline(inFile, line); 
 
     for (int i = 0; i < N; i++) {
@@ -355,10 +379,10 @@ int main() {
     inFile.close();
 
     cout << "--- RESULTS ---" << endl;
-    PrimMST(N, distMatrix);
+    primMST(N, distMatrix);
     nearestNeighbor(N, distMatrix);
-    solveMaxFlow(N, flowMatrix);
-    solveVoronoi(N, sites);
+    edmondsKarp(N, flowMatrix);
+    voronoi(N, sites);
 
     return 0;
 }
