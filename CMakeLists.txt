@@ -7,7 +7,7 @@ find_package(CGAL REQUIRED)
 find_package(CGAL COMPONENTS Qt6 REQUIRED)
 
 #Exe name
-add_executable(ActInt2 probe2.cpp)
+add_executable(ActInt2 main.cpp)
 
 target_compile_definitions(ActInt2 PRIVATE CGAL_USE_BASIC_VIEWER)
 
