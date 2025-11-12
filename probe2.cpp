@@ -8,6 +8,10 @@
 #include <iomanip>
 #include <queue>
 #include <fstream>
+#include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
+#include <CGAL/Delaunay_triangulation_2.h>
+#include <CGAL/draw_triangulation_2.h>
+
 
 using namespace std;
 
@@ -238,11 +242,17 @@ vector<Point> clipPoly(const vector<Point>& poly, Line l, Point site) {
     return newPoly;
 }
 
-void solveVoronoi(int N, vector<Point> sites) {
+
+typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
+typedef CGAL::Delaunay_triangulation_2<K> DT;
+typedef K::Point_2 CGAL_Point;
+
+
+
+void solveVoronoi(int N, const vector<Point>& sites) {
     cout << "4. Voronoi Regions (nearest exchange areas):" << endl;
 
-    // Define a bounding box for the city.
-    // Based on example input (coords around 100-500), let's use a generous 0-1000 box.
+    // --- Part A: Text Output (Manual Implementation for city bounding box clipping) ---
     double MIN_C = 0, MAX_C = 1000;
     vector<Point> boundingBox = { {MIN_C, MIN_C}, {MAX_C, MIN_C}, {MAX_C, MAX_C}, {MIN_C, MAX_C} };
 
@@ -263,6 +273,22 @@ void solveVoronoi(int N, vector<Point> sites) {
         }
         cout << "]" << endl;
     }
+
+    // --- Part B: Graphical Output (CGAL Interactive Draw) ---
+    cout << "\n[CGAL] Preparing interactive window..." << endl;
+    
+    vector<CGAL_Point> cgalPoints;
+    for (const auto& p : sites) {
+        cgalPoints.push_back(CGAL_Point(p.x, p.y));
+    }
+
+    DT dt;
+    dt.insert(cgalPoints.begin(), cgalPoints.end());
+
+    cout << "Opening CGAL interactive window..." << endl;
+    // This function opens a GUI window and might block execution until closed.
+    CGAL::draw(dt); 
+
     cout << "--------------------------------------------------------" << endl;
 }
 
@@ -303,7 +329,11 @@ int main() {
     getline(inFile, line); 
 
     for (int i = 0; i < N; i++) {
-        getline(inFile, line);
+        while (getline(inFile, line)) {
+            if (line.find('(') != string::npos) {
+                break;
+            }
+        }       
         // Parse (x,y)
         size_t openP = line.find('(');
         size_t comma = line.find(',');
