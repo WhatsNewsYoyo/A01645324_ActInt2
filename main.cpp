@@ -14,7 +14,6 @@
 #include <CGAL/Delaunay_triangulation_adaptation_policies_2.h>
 #include <CGAL/Voronoi_diagram_2.h>
 #include <CGAL/draw_voronoi_diagram_2.h>
-
 using namespace std;
 
 // Auxiliary constants
@@ -297,6 +296,7 @@ vector<Point> clipPoly(const vector<Point>& poly, Line l, Point site) {
     return newPoly;     // Returns the line that passes through the polygon to calculate the intersection with the cut line
 }
 
+// CGAL types
 typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
 typedef CGAL::Delaunay_triangulation_2<K> DT;
 typedef CGAL::Delaunay_triangulation_adaptation_traits_2<DT> AT;
@@ -304,24 +304,29 @@ typedef CGAL::Delaunay_triangulation_caching_degeneracy_removal_policy_2<DT> AP;
 typedef CGAL::Voronoi_diagram_2<DT, AT, AP> VD;
 typedef K::Point_2 CGAL_Point;
 
-
+// This function prints in text the Voronoi regions for each site, calculated by the bounding box method.
+// The graphical representation is done with CGAL, using the Delaunay triangulation function.
 void voronoi(int N, const vector<Point>& sites) {
     cout << "4. Voronoi Regions (nearest exchange areas):" << endl;
 
-    // --- Part A: Text Output (Manual Implementation for city bounding box clipping) ---
-    double MIN_C = 0, MAX_C = 1000;
-    vector<Point> boundingBox = { {MIN_C, MIN_C}, {MAX_C, MIN_C}, {MAX_C, MAX_C}, {MIN_C, MAX_C} };
+    // Text output
+    double MIN_C = 0, MAX_C = 1000;     // Defines the "box" that limits the total space
+    vector<Point> boundingBox = { {MIN_C, MIN_C}, {MAX_C, MIN_C}, {MAX_C, MAX_C}, {MIN_C, MAX_C} };     // Initial polygon
 
-    cout << fixed << setprecision(1);
+    cout << fixed << setprecision(1);       // Print numbers with one decimal
 
+    // Calculation of the Voronoi regions
     for (int i = 0; i < N; ++i) {
-        vector<Point> region = boundingBox;
+        vector<Point> region = boundingBox;     // Region is the whole box
+
+        // For each site j, calculate the bisector and cut the polygon
         for (int j = 0; j < N; ++j) {
             if (i == j) continue;
             Line bisector = getBisector(sites[i], sites[j]);
             region = clipPoly(region, bisector, sites[i]);
         }
 
+        // Print results mapping 0->A, 1->B, etc.
         cout << "Region for " << indexToChar(i) << " (" << sites[i].x << "," << sites[i].y << "): [";
         for (size_t k = 0; k < region.size(); ++k) {
             cout << "(" << region[k].x << "," << region[k].y << ")";
@@ -330,21 +335,21 @@ void voronoi(int N, const vector<Point>& sites) {
         cout << "]" << endl;
     }
 
-    // --- Part B: Graphical Output (CGAL Interactive Draw) ---
+    // Graphic representation
     cout << "\n[CGAL] Preparing interactive Voronoi window..." << endl;
     
+    // Convert Point to CGAL_Point
     vector<CGAL_Point> cgalPoints;
     for (const auto& p : sites)
         cgalPoints.push_back(CGAL_Point(p.x, p.y));
     
-    // 1. Construir la triangulación de Delaunay
+    // Create the Delaunay triangulation and inserts the points
     DT dt;
     dt.insert(cgalPoints.begin(), cgalPoints.end());
     
-    // 2. Crear el diagrama de Voronoi a partir de la Delaunay
+    // Create de Voronoir diagram based on the triangulation
     VD vd(dt);
-    
-    // 3. Mostrar solo el Voronoi Diagram en ventana interactiva
+
     cout << "Opening CGAL Voronoi viewer..." << endl;
     CGAL::draw(vd);
     
