@@ -10,7 +10,10 @@
 #include <fstream>
 #include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 #include <CGAL/Delaunay_triangulation_2.h>
-#include <CGAL/draw_triangulation_2.h>
+#include <CGAL/Delaunay_triangulation_adaptation_traits_2.h>
+#include <CGAL/Delaunay_triangulation_adaptation_policies_2.h>
+#include <CGAL/Voronoi_diagram_2.h>
+#include <CGAL/draw_voronoi_diagram_2.h>
 
 using namespace std;
 
@@ -296,8 +299,10 @@ vector<Point> clipPoly(const vector<Point>& poly, Line l, Point site) {
 
 typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
 typedef CGAL::Delaunay_triangulation_2<K> DT;
+typedef CGAL::Delaunay_triangulation_adaptation_traits_2<DT> AT;
+typedef CGAL::Delaunay_triangulation_caching_degeneracy_removal_policy_2<DT> AP;
+typedef CGAL::Voronoi_diagram_2<DT, AT, AP> VD;
 typedef K::Point_2 CGAL_Point;
-
 
 
 void voronoi(int N, const vector<Point>& sites) {
@@ -326,20 +331,23 @@ void voronoi(int N, const vector<Point>& sites) {
     }
 
     // --- Part B: Graphical Output (CGAL Interactive Draw) ---
-    cout << "\n[CGAL] Preparing interactive window..." << endl;
+    cout << "\n[CGAL] Preparing interactive Voronoi window..." << endl;
     
     vector<CGAL_Point> cgalPoints;
-    for (const auto& p : sites) {
+    for (const auto& p : sites)
         cgalPoints.push_back(CGAL_Point(p.x, p.y));
-    }
-
+    
+    // 1. Construir la triangulación de Delaunay
     DT dt;
     dt.insert(cgalPoints.begin(), cgalPoints.end());
-
-    cout << "Opening CGAL interactive window..." << endl;
-    // This function opens a GUI window and might block execution until closed.
-    CGAL::draw(dt); 
-
+    
+    // 2. Crear el diagrama de Voronoi a partir de la Delaunay
+    VD vd(dt);
+    
+    // 3. Mostrar solo el Voronoi Diagram en ventana interactiva
+    cout << "Opening CGAL Voronoi viewer..." << endl;
+    CGAL::draw(vd);
+    
     cout << "--------------------------------------------------------" << endl;
 }
 
