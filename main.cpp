@@ -1,3 +1,20 @@
+/*
+    Authors :
+    Diego Núñez García | A01644371
+    Victor Manuel Laureano Vega | A01638979
+    José Yael Varela García | A01645324
+
+    Date : November 14th, 2025.
+
+    Program :
+    This program solves four problems based on the course second challenge. It reads city network data and applies classical algorithms to :
+    1) Determine the optimal wiring using Minimum Spanning Tree, using Prim's Algorithm to solve it.
+    2) Compute a delivery route visiting all neighborhoods, being this part a Traveling Salesman Problem and is approached by a Nearest Neighbor algorithm.
+    3) Calculate the maximum data transmission capacity between two neighborhoods, being a Max flow problem, and is solved by using Edmonds-Karp algorithm.
+    4) Generate the Voronoi regions of service exchanges to determine the closest central for new clients.
+
+    */
+
 #include <iostream>
 #include <vector>
 #include <string>
