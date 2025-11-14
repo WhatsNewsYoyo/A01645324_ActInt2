@@ -1,0 +1,3 @@
+Diego Núñez García | A01644371  : Prim, Nearest-Neighbor.
+Victor Manuel Laureano Vega | A01638979 : Voronoi and use of CGAL.
+José Yael Varela García | A01645324 : Max-flow.
