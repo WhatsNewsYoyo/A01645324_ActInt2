@@ -55,6 +55,9 @@ char indexToChar(int i) {
     
     Complexity: Because of the nested for loops, the complexity of this algorithm is O(N^2), where N represents the number
     of nodes in the graph.
+
+    Input : Recieves the amount of sites and the distances between them.
+    Output : Minimum Spanning Tree that represents the optimal wiring and the total wiring distance of this path.
 */
 void primMST(int N, const vector<vector<double>>& distMatrix) {
     cout << "1. Optimal wiring (MST):" << endl;
@@ -110,8 +113,13 @@ void primMST(int N, const vector<vector<double>>& distMatrix) {
     This function tries to solve the TSP problem by always visiting the nearest node. N represents the number
     of cities (nodes) and distMatrix the distances between city i and city j.
 
-    Complexity:
+    Complexity: O(N^2) because it iterates for every site and for each neighbor, and in the worst case the amount of neighbors could be the total amount of sites.
+
+    Input : Amount of sites and the matrix that represent the distance between them.
+    Output : The optimal (shortest) route that connects all the sites and the total distance of this path.
+
 */
+
 void nearestNeighbor(int N, const vector<vector<double>>& distMatrix) {
     cout << "2. Shortest route (Nearest Neighbor):" << endl;
 
@@ -169,6 +177,9 @@ void nearestNeighbor(int N, const vector<vector<double>>& distMatrix) {
     Complexity of the whole algorithm: O(V*E^2), because each one of the E edges can cause
     an iteration of the BFS, which costs approximately O(E) (in the worst case, there are more edges
     than vertices), O(V) times.
+
+    Input : Amount of sites and the matrix that represents the flow graph of the network.
+    Output : Maximum flow of the network.
 */
 
 // Auxiliary function to find augmenting paths. The Edmonds-Karp implementation uses breadth-first search
@@ -242,6 +253,9 @@ void edmondsKarp(int N, vector<vector<double>> capacity) {
     complexity because of the nested for loops + the cost of cutting the polygon, which is linear
     but has to be done N times, transforming it in quadratic. Considering we have N sites, the total
     complexity of this procedure is O(n^3).
+
+    Input : The N amount of sites and the coordinates of each of the N sites.
+    Output : Points that represents the Voronoi regions and the CGAL representation of the regions (chart).
 */
 
 // Geometry helpers
