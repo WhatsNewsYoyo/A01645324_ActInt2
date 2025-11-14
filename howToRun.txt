@@ -1,0 +1,5 @@
+Commands to compile and run (windows).
+cd build
+cmake --build . --config Release 
+cd Release
+.\ActInt2.exe

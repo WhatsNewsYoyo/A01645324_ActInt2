@@ -352,8 +352,8 @@ void voronoi(int N, const vector<Point>& sites) {
         cout << "]" << endl;
     }
 
-    // Graphic representation
-    cout << "\n[CGAL] Preparing interactive Voronoi window..." << endl;
+    //Graphic representation
+    
     
     // Convert Point to CGAL_Point
     vector<CGAL_Point> cgalPoints;
@@ -367,7 +367,6 @@ void voronoi(int N, const vector<Point>& sites) {
     // Create de Voronoir diagram based on the triangulation
     VD vd(dt);
 
-    cout << "Opening CGAL Voronoi viewer..." << endl;
     CGAL::draw(vd);
     
     cout << "--------------------------------------------------------" << endl;
