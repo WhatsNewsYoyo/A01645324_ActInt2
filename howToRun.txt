@@ -3,3 +3,10 @@ cd build
 cmake --build . --config Release 
 cd Release
 .\ActInt2.exe
+
+Commandos to compile and run (Linux).
+mkdir build
+cd build
+cmake ..
+make
+./ActInt2
